@@ -1,0 +1,16 @@
+---
+title: "initial_batti"
+format: docx
+editor: visual
+---
+
+```{r warning=FALSE, message=FALSE}
+source("initial.R")
+```
+
+```{r echo=FALSE}
+batti %>% 
+  group_by(treatment_label) %>% 
+  summarise(n())
+
+```
